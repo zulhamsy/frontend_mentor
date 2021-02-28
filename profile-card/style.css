@@ -1,0 +1,11 @@
+body {
+	background: hsl(185, 75%, 39%);
+}
+
+#card-banner {
+	background: url('_assets/bg-pattern-card.svg')
+}
+
+#svg-bg {
+	z-index: -10;
+}
