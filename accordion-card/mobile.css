@@ -1,0 +1,11 @@
+body {
+	background: rgb(175, 103, 233);
+	background: linear-gradient(180deg, rgba(175, 103, 233, 1) 0%, rgba(101, 101, 231, 1) 60%);
+}
+
+#woman {
+	background: url('_assets/illustration-woman-online-mobile.svg'), url('_assets/bg-pattern-mobile.svg');
+	background-repeat: no-repeat;
+	background-size: contain, 12rem;
+	background-position: 38% center, center bottom;
+}
