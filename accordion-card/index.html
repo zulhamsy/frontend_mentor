@@ -11,38 +11,53 @@
 	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	<style>
 		.attribution {
-			font-size: 11px;
+			font-size: 12px;
 			text-align: center;
-		}
-
-		.attribution a {
-			color: hsl(228, 45%, 44%);
 		}
 	</style>
 </head>
 
-<body class="h-screen flex flex-col items-center justify-center">
-	<div class="bg-white rounded-lg w-80">
+<body class="min-h-screen flex flex-col items-center justify-center">
+	<div class="bg-white rounded-lg w-80 mb-2 shadow-xl">
 		<!--SVG Illustration-->
-		<div id="woman" class="transform -translate-y-2/4 w-full h-40 z-10"></div>
+		<div id="woman" class="-mt-24 w-full h-44 z-10"></div>
+		<!--Content Card-->
+		<div class="rounded-lg w-full p-4">
+			<p class="font-semibold text-3xl text-gray-500 text-center mb-2">FAQ</p>
+			<details class="text-sm py-3 border-b border-gray-100">
+				<summary class="text-gray-800 font-medium flex justify-between items-center focus:outline-none">
+					<p>How many team members can I invite?</p><span id="arrow"><img src="_assets/icon-arrow-down.svg" alt="arrow" /></span>
+				</summary>
+				<p class="text-gray-500 w-11/12 pt-2">You can invite up to 2 additional users on the Free plan. There is no limit on
+					team members for the Premium plan.</p>
+			</details>
+			<details class="text-sm py-3 border-b border-gray-100">
+				<summary class="text-gray-800 font-medium flex justify-between items-center focus:outline-none">
+					<p>What is the maximum file upload size?</p><span id="arrow"><img src="_assets/icon-arrow-down.svg" alt="arrow" /></span>
+				</summary>
+				<p class="text-gray-500 w-11/12 pt-2">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+			</details>
+			<details class="text-sm py-3 border-b border-gray-100">
+				<summary class="text-gray-800 font-medium flex justify-between items-center focus:outline-none">
+					<p>How do I reset my password?</p><span id="arrow"><img src="_assets/icon-arrow-down.svg" alt="arrow" /></span>
+				</summary>
+				<p class="text-gray-500 w-11/12 pt-2">Click “Forgot password” from the login page or “Change password” from your profile page.
+					A reset link will be emailed to you.</p>
+			</details>
+			<details class="text-sm py-3 border-b border-gray-100">
+				<summary class="text-gray-800 font-medium flex justify-between items-center focus:outline-none">
+					<p>Can I cancel my subscription?</p><span id="arrow"><img src="_assets/icon-arrow-down.svg" alt="arrow" /></span>
+				</summary>
+				<p class="text-gray-500 w-11/12 pt-2">Yes! Send us a message and we’ll process your request no questions asked.</p>
+			</details>
+			<details class="text-sm py-3 border-b border-gray-100">
+				<summary class="text-gray-800 font-medium flex justify-between items-center focus:outline-none">
+					<p>Do you provide additional support?</p><span id="arrow"><img src="_assets/icon-arrow-down.svg" alt="arrow" /></span>
+				</summary>
+				<p class="text-gray-500 w-11/12 pt-2">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+			</details>
+		</div>
 	</div>
-	<!--Content Card-->
-	<div class="bg-white transform -translate-y-2/4 rounded-lg w-80 h-40 text-center py-2">
-		<p>FAQ</p>
-	</div>
-	<!--
-	How many team members can I invite?
-	You can invite up to 2 additional users on the Free plan. There is no limit on
-	team members for the Premium plan.
-	What is the maximum file upload size?
-	No more than 2GB. All files in your account must fit your allotted storage space.
-	How do I reset my password?
-	Click “Forgot password” from the login page or “Change password” from your profile page.
-	A reset link will be emailed to you.
-	Can I cancel my subscription?
-	Yes! Send us a message and we’ll process your request no questions asked.
-	Do you provide additional support?
-	Chat and email support is available 24/7. Phone lines are open during normal business hours.-->
 	<div class="attribution">
 		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
 		Coded by <a href="#">zulhamsy</a>.

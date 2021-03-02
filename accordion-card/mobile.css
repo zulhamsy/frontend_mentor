@@ -7,5 +7,17 @@ body {
 	background: url('_assets/illustration-woman-online-mobile.svg'), url('_assets/bg-pattern-mobile.svg');
 	background-repeat: no-repeat;
 	background-size: contain, 12rem;
-	background-position: 38% center, center bottom;
+	background-position: center center, center bottom;
+}
+
+details summary::-webkit-details-marker {
+	display: none;
+}
+
+details[open] summary #arrow {
+	transform: rotate(180deg);
+}
+
+details[open] summary p {
+	color: hsl(14, 88%, 65%);
 }
