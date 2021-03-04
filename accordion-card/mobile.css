@@ -14,10 +14,28 @@ details summary::-webkit-details-marker {
 	display: none;
 }
 
-details[open] summary #arrow {
+details[open] summary .arrow {
 	transform: rotate(180deg);
+	transition: 0.5s;
 }
 
 details[open] summary p {
-	color: hsl(14, 88%, 65%);
+	color: hsl(237, 12%, 33%);
+	font-weight: 700;
+}
+
+details[open] summary~* {
+	animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+	0% {
+		opacity: 0;
+		margin-top: -10px
+	}
+
+	100% {
+		opacity: 1;
+		margin-top: 0px
+	}
 }
