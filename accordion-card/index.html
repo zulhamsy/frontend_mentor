@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 	<link rel="icon" type="image/png" sizes="32x32" href="_assets/favicon-32x32.png">
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="mobile.css" type="text/css" media="(max-width:768px)" />
+	<link rel="stylesheet" href="mobile.css" type="text/css" />
 	<title>Frontend Mentor | FAQ Accordion Card</title>
 	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	<style>
@@ -17,13 +17,16 @@
 	</style>
 </head>
 
-<body class="min-h-screen flex flex-col items-center justify-start">
+<body class="min-h-screen flex flex-col items-center">
 	<div class="bg-white rounded-lg w-80 mb-2 shadow-xl mt-28" id="card">
 		<!--SVG Illustration-->
 		<div id="woman" class="-mt-24 w-full h-44 z-10"></div>
+		<div id="woman-desktop">
+			<div id="box-desktop"></div>
+		</div>
 		<!--Content Card-->
-		<div class="rounded-lg w-full p-4">
-			<p class="font-semibold text-3xl text-gray-700 text-center mb-2">FAQ</p>
+		<div id="content" class="rounded-lg w-full p-4">
+			<p class="font-semibold text-3xl text-gray-700 text-center mb-2 md:text-left">FAQ</p>
 			<details class="text-sm py-3 border-b border-gray-100">
 				<summary class="text-gray-500 font-medium flex justify-between items-center focus:outline-none">
 					<p>How many team members can I invite?</p><span class="arrow"><img src="_assets/icon-arrow-down.svg" alt="arrow" /></span>
