@@ -17,6 +17,7 @@ body {
 #container {
     display: grid;
     grid-template-columns: 1fr;
+    min-width: 450px;
 }
 
 /* Section 1 */
