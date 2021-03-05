@@ -30,3 +30,29 @@ body {
     font-weight: 500;
     color: var(--n-dark-magenta);
 }
+
+/* Section 2 */
+#section-2 {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.rating-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: var(--n-light-magenta);
+    color: var(--primary-magenta);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.five-star {
+    margin-bottom: 0.75rem;
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
