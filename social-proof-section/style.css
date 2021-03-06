@@ -41,7 +41,8 @@ body {
 }
 
 /* Section 2 */
-#section-2 {
+#section-2,
+#section-3 {
     display: grid;
     grid-gap: 1rem;
 }
@@ -64,4 +65,36 @@ body {
     display: flex;
     width: 40%;
     justify-content: space-evenly;
+}
+
+/* Section 3 */
+.review-card {
+	background-color: var(--primary-magenta);
+	border-radius: 0.5rem;
+}
+
+.review-profile {
+	display: flex;
+	align-items: center;
+}
+
+.review-profile img {
+	width: 2.5rem;
+}
+
+.profile-name {
+	color: var(--white);
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.profile-stats {
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--primary-pink);
+}
+
+.review-text {
+	color: var(--white);
+	font-size: 12px;
 }
