@@ -12,12 +12,17 @@
 body {
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
+    background: url('_assets/bg-pattern-top-mobile.svg'), url('_assets/bg-pattern-bottom-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 95%, cover;
+    background-position: left top, left bottom;
 }
 
 #container {
     display: grid;
     grid-template-columns: 1fr;
     min-width: 375px;
+    max-width: 400px;
 }
 
 /* Section 1 */
