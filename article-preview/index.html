@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<link rel="icon" type="image/png" sizes="32x32" href="_assets/favicon-32x32.png">
+	<title>Frontend Mentor | Article preview component</title>
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+
+	</style>
+	<link rel="stylesheet" href="../_tailwind/tailwind.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex flex-col justify-center items-center min-h-screen">
+	<div id="container" class="shadow-xl rounded-lg flex flex-col items-center bg-white mb-8">
+		<!--Image-->
+		<div id="image">
+			<img src="_assets/drawers.jpg" alt="drawers" />
+		</div>
+		<!--Text-->
+		<div class="p-12 pt-16 pb-8">
+			<div>
+				<p id="title" class="leading-snug">Shift the overall look and feel by adding these wonderful
+					touches to furniture in your home</p>
+				<p id="subtitle" class="mt-6 leading-relaxed">Ever been in a room and felt like<br />something was missing? Perhaps
+					it felt slightly bare and uninviting. I’ve got some simple tips
+					to help you make any room feel complete.</p>
+			</div>
+			<!--CTA-->
+			<div class="mt-12">
+				<!--Inactive State-->
+				<div id="inactive" class="flex items-center">
+					<!--Avatar-->
+					<img src="_assets/avatar-michelle.jpg" alt="michelle" class="rounded-full w-20" />
+					<!--Profile Info-->
+					<div id="profile-info" class="ml-5 flex-grow">
+						<p id="name">Michelle Appleton</p>
+						<p id="date">28 Jun 2020</p>
+					</div>
+					<!--Share Button-->
+					<button class="btn-share rounded-full w-16 h-16 flex justify-center items-center focus:outline-none"><img src="_assets/icon-share.svg"/></button>
+				</div>
+				<!--Share State-->
+			</div>
+		</div>
+	</div>
+	<div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+		Coded by <a href="https://www.frontendmentor.io/profile/zulhamsy">@zulhamsy</a>.
+	</div>
+</body>
+
+</html>
