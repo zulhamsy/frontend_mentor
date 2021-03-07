@@ -8,7 +8,6 @@
 	<title>Frontend Mentor | Article preview component</title>
 	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	<style>
-
 	</style>
 	<link rel="stylesheet" href="../_tailwind/tailwind.min.css">
 	<link rel="stylesheet" href="style.css">
@@ -21,7 +20,7 @@
 			<img src="_assets/drawers.jpg" alt="drawers" />
 		</div>
 		<!--Text-->
-		<div class="p-12 pt-16 pb-8">
+		<div class="p-12 pt-16 pb-0">
 			<div>
 				<p id="title" class="leading-snug">Shift the overall look and feel by adding these wonderful
 					touches to furniture in your home</p>
@@ -30,7 +29,7 @@
 					to help you make any room feel complete.</p>
 			</div>
 			<!--CTA-->
-			<div class="mt-12">
+			<div class="mt-4 pt-8 -mx-12 px-12 pb-8">
 				<!--Inactive State-->
 				<div id="inactive" class="flex items-center">
 					<!--Avatar-->
@@ -41,7 +40,8 @@
 						<p id="date">28 Jun 2020</p>
 					</div>
 					<!--Share Button-->
-					<button class="btn-share rounded-full w-16 h-16 flex justify-center items-center focus:outline-none"><img src="_assets/icon-share.svg"/></button>
+					<button class="btn-share rounded-full w-16 h-16 flex justify-center items-center focus:outline-none"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+							<path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" /></svg></button>
 				</div>
 				<!--Share State-->
 			</div>
