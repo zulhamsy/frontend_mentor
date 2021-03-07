@@ -53,8 +53,32 @@ body {
 	color: var(--gray);
 }
 
+#active {
+	background: var(--dark-gray);
+	transition: 0.3s ease-out;
+}
+
+#share-text {
+	letter-spacing: 0.4em;
+	color: var(--saturate-dark);
+	font-weight: 700;
+}
+
+.btn, .btn svg path {
+	transition: background, fill 0.3s ease-in;
+}
+
 .btn-share {
 	background: var(--light-gray);
+}
+
+/* Active Styles */
+.btn-active {
+	background: var(--saturate-dark);
+}
+
+.btn-active svg path {
+	fill: #fff;
 }
 
 .attribution {
