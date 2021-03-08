@@ -55,7 +55,7 @@ body {
 
 #active {
 	background: var(--dark-gray);
-	transition: 0.3s ease-out;
+	transition: 0.4s ease-in-out;
 }
 
 #share-text {
