@@ -9,85 +9,105 @@
 
 html {
 	font-family: 'Manrope', sans-serif;
-	font-size: 62.5%;
+    background: var(--light-gray);
 }
+@media(min-width: 900px) {
+    body {
+        @apply flex;
+        @apply flex-col;
+        @apply justify-center;
+        @apply items-center;
+        @apply h-screen;
+        @apply w-full;
+    }
 
-body {
-	font-size: 1.3rem;
-	background-color: var(--light-gray);
-	@apply bg-white
-}
+    .wrapper {
+        @apply flex;
+        @apply rounded-lg;
+        @apply overflow-hidden;
+        @apply shadow-lg;
+    }
 
-#container {
-	width: 90vw;
-	max-width: 375px;
-	overflow: hidden;
-}
+    .image img {
+        width: 286px;
+        height: 278px
+    }
 
-#image {
-	height: 200px;
-}
+    .text-content {
+        width: 445px;
+        @apply bg-white;
+        @apply px-9;
+    }
 
-#image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
+    .text-content .text-title {
+        color: var(--dark-gray);
+        letter-spacing: 1px;
+        @apply pt-8;
+        @apply mb-3;
+        @apply font-bold;
+        @apply text-lg;
+    }
 
-#title {
-	font-size: 1.8rem;
-	font-weight: 700;
-	color: var(--dark-gray);
-}
+    .text-content .text-subtitle {
+        color: var(--saturate-dark);
+        font-size: 11px;
+        letter-spacing: 1px;
+        @apply font-normal;
+        @apply leading-5;
+    }
 
-#subtitle {
-	font-size: 1.4rem;
-	color: var(--saturate-dark);
-}
+    .footer {
+        height: 86px;
+        @apply w-full;
+        @apply flex;
+    }
 
-#profile-info #name {
-	color: var(--dark-gray);
-	font-weight: 700;
-}
+    .footer > * {
+        @apply flex-grow;
+    }
 
-#profile-info #date {
-	color: var(--gray);
-}
+    .profile {
+        @apply flex;
+        @apply items-center;
+    }
 
-#active {
-	background: var(--dark-gray);
-	transition: 0.4s ease-in-out;
-}
+    .profile .profile-image {
+        background: url('_assets/avatar-michelle.jpg');
+        background-size: contain;
+        @apply rounded-full;
+        @apply w-11;
+        @apply h-11;
+        @apply mr-3;
+    }
 
-#share-text {
-	letter-spacing: 0.4em;
-	color: var(--saturate-dark);
-	font-weight: 700;
-}
+    .profile .profile-name {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
 
-.btn, .btn svg path {
-	transition: background, fill 0.3s ease-in;
-}
+    .profile .profile-name .name {
+        color: var(--dark-gray);
+        @apply font-bold;
+        @apply leading-5;
+    }
 
-.btn-share {
-	background: var(--light-gray);
-}
+    .profile .profile-name .date {
+        color: var(--saturate-dark);
+    }
 
-/* Active Styles */
-.btn-active {
-	background: var(--saturate-dark);
-}
+    .share {
+        @apply flex;
+        @apply justify-end;
+        @apply items-center;
+    }
 
-.btn-active svg path {
-	fill: #fff;
-}
-
-.attribution {
-	font-size: 11px;
-	text-align: center;
-	color: var(--saturate-dark);
-}
-
-.attribution a {
-	color: hsl(228, 45%, 44%);
+    .share .share-img {
+        background-color: var(--light-gray);
+        @apply flex;
+        @apply justify-center;
+        @apply items-center;
+        @apply rounded-full;
+        @apply w-8;
+        @apply h-8;
+    }
 }
